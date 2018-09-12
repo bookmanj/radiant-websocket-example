@@ -10,6 +10,8 @@ this = os.path.dirname(os.path.realpath(__file__))
 def read(name):
     with open(os.path.join(this, name)) as f:
         return f.read()
+
+
 setup(
     name='radiant-websocket-example',
     version='0.0.1',
