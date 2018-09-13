@@ -24,7 +24,7 @@ def main():
     LOCAL_ONLY = False
     DEBUG = True
     print("Running process %s with args %s" % (app.COMMAND_NAME, app.COMMAND_ARGS))
-    factory = app.WebSocketProcessOutputterThingFactory("ws://%s:9000" % ("localhost" if LOCAL_ONLY else "0.0.0.0"))
+    factory = app.WebSocketProcessOutputterThingFactory("ws://%s:8080" % ("localhost" if LOCAL_ONLY else "0.0.0.0"))
     app.listenWS(factory)
     app.reactor.run()
   
